@@ -9,10 +9,342 @@
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/animations.css" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
   </head>
   <body class="page">
-    <header class="header"></header>
-    <main></main>
+    <header class="header">
+      <div class="header__container">
+        <a class="header__logo" href="#">
+          <svg class="header__logo-svg" width="21" height="21" viewBox="0 0 21 21">
+            <use xlink:href="./images/icons.svg#logo"></use>
+          </svg>
+          <span class="header__logo-text">&lt;/HTML&gt;</span>
+        </a>
+        <h1 class="header__title">ЗАКРЫВАЮЩИЙ ТЕГ</h1>
+        <p class="header__subtitle">Фритрек и нулевой спринт: Подготовка к работе</p>
+      </div>
+    </header>
+    
+    <main class="main">
+      <section class="cards">
+        <!-- Карточка 1 -->
+        <article class="card">
+          <div class="card__header">
+            <h2 class="card__title">Старт</h2>
+            <time class="card__date" datetime="2024-01">Январь 2024</time>
+          </div>
+          
+          <div class="card__image-container">
+            <img class="card__image" src="./images/card1.svg" alt="Начало пути" loading="lazy" />
+            <div class="card__label">Начало</div>
+          </div>
+          
+          <div class="card__content">
+            <p>Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу. Я помню, как смотрел на код и думал: "Смогу ли я когда-нибудь это понять?" Но с каждым днём стало появляться больше ясности.</p>
+            <p>Первые строчки HTML, первая страница, которая заработала в браузере — это было волшебно!</p>
+          </div>
+          
+          <div class="card__footer">
+            <div class="card__buttons">
+              <button class="card__icon-button" aria-label="Поставить лайк">
+                <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36">
+                  <g class="heart">
+                    <path class="core" fill="none" d="M12.5,5.5C8.5,5.5,5,9,5,13c0,12,13.5,18,13.5,18S32,25,32,13c0-4-3.5-7.5-7.5-7.5S19.5,10,19.5,13c0-3-2-7.5-7-7.5Z"/>
+                    <path class="contour" fill="var(--contour-color)" d="M12.5,5.5C8.5,5.5,5,9,5,13c0,12,13.5,18,13.5,18S32,25,32,13c0-4-3.5-7.5-7.5-7.5S19.5,10,19.5,13c0-3-2-7.5-7-7.5Z"/>
+                    <path class="main-body" fill="none" d="M12.5,5.5C8.5,5.5,5,9,5,13c0,12,13.5,18,13.5,18S32,25,32,13c0-4-3.5-7.5-7.5-7.5S19.5,10,19.5,13c0-3-2-7.5-7-7.5Z"/>
+                  </g>
+                  <path class="sparks" fill="var(--animation-fill-color)" d="M27,6c-3,0-5,4-5,7c0,2,2,5,5,7s5-5,5-7C32,10,30,6,27,6Z M12,6C9,6,7,10,7,13c0,2,2,5,5,7s5-5,5-7C17,10,15,6,12,6Z"/>
+                </svg>
+              </button>
+              <button class="card__like-button">
+                <span class="button__text">Like</span>
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <!-- Карточка 2 -->
+        <article class="card">
+          <div class="card__header">
+            <h2 class="card__title">Тернинг</h2>
+            <time class="card__date" datetime="2024-02">Февраль 2024</time>
+          </div>
+          
+          <div class="card__image-container">
+            <img class="card__image" src="./images/card2.png" alt="Страх чистого листа" loading="lazy" />
+            <div class="card__label">Страх</div>
+          </div>
+          
+          <div class="card__content">
+            <p>На первых этапах мы работали со страхами и сомнениями. Этот страх чистого листа — не просто боязнь белого экрана. Это страх сделать первый шаг, начать что-то новое, страх неудачи.</p>
+            <p>Я помню, как часами смотрел на пустой файл index.html, не зная с чего начать. Но потом понял: просто нужно начать. Любой код лучше, чем его отсутствие.</p>
+          </div>
+          
+          <div class="card__footer">
+            <div class="card__buttons">
+              <button class="card__icon-button" aria-label="Поставить лайк">
+                <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36">
+                  <g class="heart">
+                    <path class="core" fill="none" d="M12.5,5.5C8.5,5.5,5,9,5,13c0,12,13.5,18,13.5,18S32,25,32,13c0-4-3.5-7.5-7.5-7.5S19.5,10,19.5,13c0-3-2-7.5-7-7.5Z"/>
+                    <path class="contour" fill="var(--contour-color)" d="M12.5,5.5C8.5,5.5,5,9,5,13c0,12,13.5,18,13.5,18S32,25,32,13c0-4-3.5-7.5-7.5-7.5S19.5,10,19.5,13c0-3-2-7.5-7-7.5Z"/>
+                    <path class="main-body" fill="none" d="M12.5,5.5C8.5,5.5,5,9,5,13c0,12,13.5,18,13.5,18S32,25,32,13c0-4-3.5-7.5-7.5-7.5S19.5,10,19.5,13c0-3-2-7.5-7-7.5Z"/>
+                  </g>
+                  <path class="sparks" fill="var(--animation-fill-color)" d="M27,6c-3,0-5,4-5,7c0,2,2,5,5,7s5-5,5-7C32,10,30,6,27,6Z M12,6C9,6,7,10,7,13c0,2,2,5,5,7s5-5,5-7C17,10,15,6,12,6Z"/>
+                </svg>
+              </button>
+              <button class="card__like-button">
+                <span class="button__text">Like</span>
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <!-- Карточка 3 -->
+        <article class="card">
+          <div class="card__header">
+            <h2 class="card__title">Первый успех</h2>
+            <time class="card__date" datetime="2024-03">Март 2024</time>
+          </div>
+          
+          <div class="card__image-container">
+            <img class="card__image" src="./images/card3.png" alt="Первый проект" loading="lazy" />
+            <div class="card__label">Радость</div>
+          </div>
+          
+          <div class="card__content">
+            <p>Первый проект — позади! Помню чувство эйфории, когда всё заработало как надо. Но радость быстро сменилась мыслью: "А что дальше?" Каждый успех открывал новые горизонты и новые сложности.</p>
+            <p>Особенно гордился тем, что смог самостоятельно решить проблемы с адаптивностью.</p>
+          </div>
+          
+          <div class="card__footer">
+            <div class="card__buttons">
+              <button class="card__icon-button" aria-label="Поставить лайк">
+                <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36">
+                  <g class="heart">
+                    <path class="core" fill="none" d="M12.5,5.5C8.5,5.5,5,9,5,13c0,12,13.5,18,13.5,18S32,25,32,13c0-4-3.5-7.5-7.5-7.5S19.5,10,19.5,13c0-3-2-7.5-7-7.5Z"/>
+                    <path class="contour" fill="var(--contour-color)" d="M12.5,5.5C8.5,5.5,5,9,5,13c0,12,13.5,18,13.5,18S32,25,32,13c0-4-3.5-7.5-7.5-7.5S19.5,10,19.5,13c0-3-2-7.5-7-7.5Z"/>
+                    <path class="main-body" fill="none" d="M12.5,5.5C8.5,5.5,5,9,5,13c0,12,13.5,18,13.5,18S32,25,32,13c0-4-3.5-7.5-7.5-7.5S19.5,10,19.5,13c0-3-2-7.5-7-7.5Z"/>
+                  </g>
+                  <path class="sparks" fill="var(--animation-fill-color)" d="M27,6c-3,0-5,4-5,7c0,2,2,5,5,7s5-5,5-7C32,10,30,6,27,6Z M12,6C9,6,7,10,7,13c0,2,2,5,5,7s5-5,5-7C17,10,15,6,12,6Z"/>
+                </svg>
+              </button>
+              <button class="card__like-button">
+                <span class="button__text">Like</span>
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <!-- Карточка 4 -->
+        <article class="card">
+          <div class="card__header">
+            <h2 class="card__title">Перфекционизм</h2>
+            <time class="card__date" datetime="2024-04">Апрель 2024</time>
+          </div>
+          
+          <div class="card__image-container">
+            <img class="card__image" src="./images/card4.png" alt="Поиск идеала" loading="lazy" />
+            <div class="card__label">Идеал</div>
+          </div>
+          
+          <div class="card__content">
+            <p>Погоня за идеалом — опасная вещь. Я тратил часы на выравнивание пикселей, хотя разницу никто бы не заметил. Потом понял: лучше сделать хорошо, чем идеально. Идеал недостижим, а сроки горят.</p>
+            <p>Научился расставлять приоритеты: что важно для пользователя, а что — только для моего внутреннего перфекциониста.</p>
+          </div>
+          
+          <div class="card__footer">
+            <div class="card__buttons">
+              <button class="card__icon-button" aria-label="Поставить лайк">
+                <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36">
+                  <g class="heart">
+                    <path class="core" fill="none" d="M12.5,5.5C8.5,5.5,5,9,5,13c0,12,13.5,18,13.5,18S32,25,32,13c0-4-3.5-7.5-7.5-7.5S19.5,10,19.5,13c0-3-2-7.5-7-7.5Z"/>
+                    <path class="contour" fill="var(--contour-color)" d="M12.5,5.5C8.5,5.5,5,9,5,13c0,12,13.5,18,13.5,18S32,25,32,13c0-4-3.5-7.5-7.5-7.5S19.5,10,19.5,13c0-3-2-7.5-7-7.5Z"/>
+                    <path class="main-body" fill="none" d="M12.5,5.5C8.5,5.5,5,9,5,13c0,12,13.5,18,13.5,18S32,25,32,13c0-4-3.5-7.5-7.5-7.5S19.5,10,19.5,13c0-3-2-7.5-7-7.5Z"/>
+                  </g>
+                  <path class="sparks" fill="var(--animation-fill-color)" d="M27,6c-3,0-5,4-5,7c0,2,2,5,5,7s5-5,5-7C32,10,30,6,27,6Z M12,6C9,6,7,10,7,13c0,2,2,5,5,7s5-5,5-7C17,10,15,6,12,6Z"/>
+                </svg>
+              </button>
+              <button class="card__like-button">
+                <span class="button__text">Like</span>
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <!-- Карточка 5 -->
+        <article class="card">
+          <div class="card__header">
+            <h2 class="card__title">Команда</h2>
+            <time class="card__date" datetime="2024-05">Май 2024</time>
+          </div>
+          
+          <div class="card__image-container">
+            <img class="card__image" src="./images/card5.png" alt="Командная работа" loading="lazy" />
+            <div class="card__label">Поддержка</div>
+          </div>
+          
+          <div class="card__content">
+            <p>Всё это время я был не одинок. Одногруппники, команда сопровождения, близкие — все помогали не сойти с пути. Особенно ценил моменты, когда кто-то делился решением проблемы, над которой я бился часами.</p>
+            <p>Осознал, что программирование — это не про одиночество, а про сообщество.</p>
+          </div>
+          
+          <div class="card__footer">
+            <div class="card__buttons">
+              <button class="card__icon-button" aria-label="Поставить лайк">
+                <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36">
+                  <g class="heart">
+                    <path class="core" fill="none" d="M12.5,5.5C8.5,5.5,5,9,5,13c0,12,13.5,18,13.5,18S32,25,32,13c0-4-3.5-7.5-7.5-7.5S19.5,10,19.5,13c0-3-2-7.5-7-7.5Z"/>
+                    <path class="contour" fill="var(--contour-color)" d="M12.5,5.5C8.5,5.5,5,9,5,13c0,12,13.5,18,13.5,18S32,25,32,13c0-4-3.5-7.5-7.5-7.5S19.5,10,19.5,13c0-3-2-7.5-7-7.5Z"/>
+                    <path class="main-body" fill="none" d="M12.5,5.5C8.5,5.5,5,9,5,13c0,12,13.5,18,13.5,18S32,25,32,13c0-4-3.5-7.5-7.5-7.5S19.5,10,19.5,13c0-3-2-7.5-7-7.5Z"/>
+                  </g>
+                  <path class="sparks" fill="var(--animation-fill-color)" d="M27,6c-3,0-5,4-5,7c0,2,2,5,5,7s5-5,5-7C32,10,30,6,27,6Z M12,6C9,6,7,10,7,13c0,2,2,5,5,7s5-5,5-7C17,10,15,6,12,6Z"/>
+                </svg>
+              </button>
+              <button class="card__like-button">
+                <span class="button__text">Like</span>
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <!-- Карточка 6 -->
+        <article class="card">
+          <div class="card__header">
+            <h2 class="card__title">Креативность</h2>
+            <time class="card__date" datetime="2024-06">Июнь 2024</time>
+          </div>
+          
+          <div class="card__image-container">
+            <img class="card__image" src="./images/card6.png" alt="Творческий подход" loading="lazy" />
+            <div class="card__label">Креатив</div>
+          </div>
+          
+          <div class="card__content">
+            <p>Когда решения иссякают, нужно смотреть на задачу под другим углом. Я научился не биться лбом об стену, а отходить, делать перерыв, искать альтернативные подходы.</p>
+            <p>Иногда лучшие решения приходят во время прогулки или даже во сне. Главное — не зацикливаться.</p>
+          </div>
+          
+          <div class="card__footer">
+            <div class="card__buttons">
+              <button class="card__icon-button" aria-label="Поставить лайк">
+                <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36">
+                  <g class="heart">
+                    <path class="core" fill="none" d="M12.5,5.5C8.5,5.5,5,9,5,13c0,12,13.5,18,13.5,18S32,25,32,13c0-4-3.5-7.5-7.5-7.5S19.5,10,19.5,13c0-3-2-7.5-7-7.5Z"/>
+                    <path class="contour" fill="var(--contour-color)" d="M12.5,5.5C8.5,5.5,5,9,5,13c0,12,13.5,18,13.5,18S32,25,32,13c0-4-3.5-7.5-7.5-7.5S19.5,10,19.5,13c0-3-2-7.5-7-7.5Z"/>
+                    <path class="main-body" fill="none" d="M12.5,5.5C8.5,5.5,5,9,5,13c0,12,13.5,18,13.5,18S32,25,32,13c0-4-3.5-7.5-7.5-7.5S19.5,10,19.5,13c0-3-2-7.5-7-7.5Z"/>
+                  </g>
+                  <path class="sparks" fill="var(--animation-fill-color)" d="M27,6c-3,0-5,4-5,7c0,2,2,5,5,7s5-5,5-7C32,10,30,6,27,6Z M12,6C9,6,7,10,7,13c0,2,2,5,5,7s5-5,5-7C17,10,15,6,12,6Z"/>
+                </svg>
+              </button>
+              <button class="card__like-button">
+                <span class="button__text">Like</span>
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <!-- Карточка 7 -->
+        <article class="card">
+          <div class="card__header">
+            <h2 class="card__title">Выгорание</h2>
+            <time class="card__date" datetime="2024-07">Июль 2024</time>
+          </div>
+          
+          <div class="card__image-container">
+            <img class="card__image" src="./images/card7.png" alt="Момент усталости" loading="lazy" />
+            <div class="card__label">Усталость</div>
+          </div>
+          
+          <div class="card__content">
+            <p>Были моменты, когда опускались руки. Проекты, теория, задачи — всё наваливалось одновременно. Научился расставлять приоритеты, делать перерывы и главное — просить о помощи, когда нужно.</p>
+            <p>Самый важный урок: нельзя работать на износ. Отдых — это часть процесса обучения.</p>
+          </div>
+          
+          <div class="card__footer">
+            <div class="card__buttons">
+              <button class="card__icon-button" aria-label="Поставить лайк">
+                <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36">
+                  <g class="heart">
+                    <path class="core" fill="none" d="M12.5,5.5C8.5,5.5,5,9,5,13c0,12,13.5,18,13.5,18S32,25,32,13c0-4-3.5-7.5-7.5-7.5S19.5,10,19.5,13c0-3-2-7.5-7-7.5Z"/>
+                    <path class="contour" fill="var(--contour-color)" d="M12.5,5.5C8.5,5.5,5,9,5,13c0,12,13.5,18,13.5,18S32,25,32,13c0-4-3.5-7.5-7.5-7.5S19.5,10,19.5,13c0-3-2-7.5-7-7.5Z"/>
+                    <path class="main-body" fill="none" d="M12.5,5.5C8.5,5.5,5,9,5,13c0,12,13.5,18,13.5,18S32,25,32,13c0-4-3.5-7.5-7.5-7.5S19.5,10,19.5,13c0-3-2-7.5-7-7.5Z"/>
+                  </g>
+                  <path class="sparks" fill="var(--animation-fill-color)" d="M27,6c-3,0-5,4-5,7c0,2,2,5,5,7s5-5,5-7C32,10,30,6,27,6Z M12,6C9,6,7,10,7,13c0,2,2,5,5,7s5-5,5-7C17,10,15,6,12,6Z"/>
+                </svg>
+              </button>
+              <button class="card__like-button">
+                <span class="button__text">Like</span>
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <!-- Карточка 8 -->
+        <article class="card">
+          <div class="card__header">
+            <h2 class="card__title">Финиш</h2>
+            <time class="card__date" datetime="2024-08">Август 2024</time>
+          </div>
+          
+          <div class="card__image-container">
+            <img class="card__image" src="./images/card8.png" alt="Завершение курса" loading="lazy" />
+            <div class="card__label">Итог</div>
+          </div>
+          
+          <div class="card__content">
+            <p>Сейчас я уже очень много знаю о вёрстке. Но это только начало. Впереди ещё много материала, много новых технологий. Вёрстка — это целый мир, который постоянно меняется.</p>
+            <p>Познать его полностью не получится, но это тот случай, когда важен сам процесс познания. Ведь часто путь — и есть результат.</p>
+          </div>
+          
+          <div class="card__footer">
+            <div class="card__buttons">
+              <button class="card__icon-button" aria-label="Поставить лайк">
+                <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36">
+                  <g class="heart">
+                    <path class="core" fill="none" d="M12.5,5.5C8.5,5.5,5,9,5,13c0,12,13.5,18,13.5,18S32,25,32,13c0-4-3.5-7.5-7.5-7.5S19.5,10,19.5,13c0-3-2-7.5-7-7.5Z"/>
+                    <path class="contour" fill="var(--contour-color)" d="M12.5,5.5C8.5,5.5,5,9,5,13c0,12,13.5,18,13.5,18S32,25,32,13c0-4-3.5-7.5-7.5-7.5S19.5,10,19.5,13c0-3-2-7.5-7-7.5Z"/>
+                    <path class="main-body" fill="none" d="M12.5,5.5C8.5,5.5,5,9,5,13c0,12,13.5,18,13.5,18S32,25,32,13c0-4-3.5-7.5-7.5-7.5S19.5,10,19.5,13c0-3-2-7.5-7-7.5Z"/>
+                  </g>
+                  <path class="sparks" fill="var(--animation-fill-color)" d="M27,6c-3,0-5,4-5,7c0,2,2,5,5,7s5-5,5-7C32,10,30,6,27,6Z M12,6C9,6,7,10,7,13c0,2,2,5,5,7s5-5,5-7C17,10,15,6,12,6Z"/>
+                </svg>
+              </button>
+              <button class="card__like-button">
+                <span class="button__text">Like</span>
+              </button>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+    
+    <footer class="footer">
+      <button class="footer__button save-button">
+        <span class="button__text">Сохранить на память</span>
+        <svg class="footer__button-icon" width="21" height="21" viewBox="0 0 21 21">
+          <use xlink:href="./images/icons.svg#floppy"></use>
+        </svg>
+      </button>
+    </footer>
+    
+    <dialog class="dialog">
+      <div class="dialog__content">
+        <svg class="dialog__icon" width="39" height="39" viewBox="0 0 39 39">
+          <use xlink:href="./images/icons.svg#floppy"></use>
+        </svg>
+        <h3 class="dialog__title">ВСТАВЬТЕ ДИСКЕТУ, ЧТОБЫ ПРОДОЛЖИТЬ</h3>
+        <div class="dialog__text">
+          <p>Ваши воспоминания сохранены. Возвращайтесь к ним, когда захочется вспомнить этот путь.</p>
+          <p>Дальше — больше!</p>
+        </div>
+        <form method="dialog">
+          <button class="dialog__button">
+            <span class="button__text">OK</span>
+          </button>
+        </form>
+      </div>
+    </dialog>
+    
     <script src="./scripts/like.js"></script>
+    <script src="./scripts/dialog.js"></script>
   </body>
 </html>
